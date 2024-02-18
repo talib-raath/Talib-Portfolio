@@ -1,2 +1,2 @@
-# Talb-s-Portfolio
+# Talib's Portfolio
 My personal Portfolio
