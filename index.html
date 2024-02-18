@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talib</title>
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
-</head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        class="stylesheet">
+
+
+</head>
 
 <body>
 
@@ -18,12 +22,12 @@
     <header class="header-area">
         <div class="container">
             <div class="header">
-               
+
                 <a href="" class="logo">
                     <img src="files/signature.png" alt="" class="signature">
                     <i class="fa fa-bolt"></i>
                 </a>
-                   
+
                 <ul class="navbar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -31,15 +35,26 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                
+
                 <div class="menu_icon">
                     <i class="fa fa-bars"></i>
                 </div>
 
             </div>
-        </div> 
+        </div>
     </header>
- 
+
+
+    <script>
+        // jQuery script to toggle the visibility of the navigation menu
+        $(document).ready(function () {
+            $(".menu_icon").click(function () {
+                $(".navbar").slideToggle();
+            });
+        });
+    </script>
+
+
     <!-------------------------- Home Page -------------------------->
     <div class="FirstElement" id="home">
         <div class="profile-photo">
@@ -48,8 +63,10 @@
         <div class="profile-text">
             <h5>Hi I'm </h5><br>
             <h1>Talib</h1><br>
-            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
-            
+            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to
+                create innovative solutions and push the boundaries of technology.With a deep love for coding and
+                problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
+
             <div class="btn-group">
                 <a href="files/TalibResume.pdf" class="btn   active">Download CV</a>
                 <a href="mailto:talib.raath@gmail.com" class="btn">Contact</a>
@@ -64,36 +81,84 @@
         </div>
     </div>
 
-        <!-------------------------- About Section -------------------------->
+    <!-------------------------- About Section -------------------------->
     <section class="about-area" id="about">
         <div class="container">
             <div class="about">
-                
+
                 <div class="about-content">
                     <h4>About Me</h4>
                     <ul>
-                      <li>I am currently pursuing my final year Bachelor's Degree in Computer Science.I have built a solid foundation in software development, particularly in areas such as C++, Python, PHP, Artificial Intelligence, SaaS, Web development , SQL, Git, and GitHub.</li>
-                      <li> My expertise in these areas allows me to approach projects with confidence and deliver high-quality results.I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering.</li>
-                      <li> I actively seek out opportunities to expand my knowledge and skills, embracing new technologies and approaches.Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate. </li>
+                        <li>I am currently pursuing my final year Bachelor's Degree in Computer Science.I have built a
+                            solid foundation in software development, particularly in areas such as C++, Python, PHP,
+                            Artificial Intelligence, SaaS, Web development , SQL, Git, and GitHub.</li>
+                        <li> My expertise in these areas allows me to approach projects with confidence and deliver
+                            high-quality results.I have a strong belief in the value of continuous learning and staying
+                            adaptable in the ever-evolving world of software engineering.</li>
+                        <li> I actively seek out opportunities to expand my knowledge and skills, embracing new
+                            technologies and approaches.Feel free to explore my work and get in touch if you have any
+                            questions or opportunities to collaborate. </li>
                     </ul>
                 </div>
-                                  
+
                 <div class="about-skills">
                     <ul>
-                        <li>Name:Talib</li>
-                        <li>Age:20</li>     
+                        <li>Name:Talib Husain</li>
+                        <li>Age:20</li>
                         <li>From:Pakistan</li>
                         <li>Email:talib.raath@gmail.com</li>
                         <li>Availabiltiy:Fulltime</li>
-                        <li>Experience&lt;1yr</li>
+                        <li>Experience&lt;2yr</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="skills-section">
+        <h4 class="skills-heading">Skills Expertise</h4>
+        <div class="skill" data-proficiency="Expert">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level"></div>
+            </div>
+        </div>
+        <div class="skill" data-proficiency="Intermediate">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill" data-proficiency="Expert">
+            <div class="skill-name">HTML & CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill" data-proficiency="Expert">
+            <div class="skill-name">Web Devlopment</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
 
-        <!-------------- Education & Experience -------------->
+        <div class="skill" data-proficiency="Expert">
+            <div class="skill-name">C++</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill" data-proficiency="Expert">
+            <div class="skill-name">React</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+
+
+    <!-------------- Education & Internship -------------->
     <section class="education-content" id="education">
         <div class="container">
             <div class="row">
@@ -109,11 +174,12 @@
                                     <h3 class="timeline-title">
                                         BS-Computer Science
                                     </h3>
-                                    <h4 class="timeline-title">FAST-National University of Computer and Emerging Sciences</h4>
+                                    <h4 class="timeline-title">FAST-National University of Computer and Emerging
+                                        Sciences</h4>
                                     <h4 class="timeline-title">
                                         <i class="fa fa-calendar"></i> 2021-2025
                                     </h4>
-                                </div> 
+                                </div>
                                 <!-- Timeline-item -->
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
@@ -129,7 +195,7 @@
                                     <h3 class="timeline-title">
                                         Matriculation
                                     </h3>
-                                    <h4 class="timeline-title"> The Knowledge School</h4>
+                                    <h4 class="timeline-title"> The Knowlege School</h4>
                                     <h4 class="timeline-title">
                                         <i class="fa fa-calendar"></i> 2017-2019
                                     </h4>
@@ -140,11 +206,11 @@
                     </div>
                 </div>
                 <div class="internship">
-                    <h3 class="title">Experience</h3>
+                    <h3 class="title">Internship</h3>
                     <div class="row">
                         <div class="timeline-box">
                             <div class="timeline">
-                                
+
                                 <!-- Timeline-item -->
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
@@ -155,9 +221,10 @@
                                     <h4 class="timeline-title">
                                         <i class="fa fa-calendar"></i> JULY-2023
                                     </h4>
-                                    <li class="timeline-text">Expert dev company providing e-commerce solutions, website optimization, and custom plugins.
+                                    <li class="timeline-text">Expert dev company providing e-commerce solutions, website
+                                        optimization, and custom plugins.
                                     </li>
-                                </div> 
+                                </div>
                                 <!-- Timeline-item -->
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
@@ -166,10 +233,12 @@
                                     <h4 class="timeline-title">
                                         <i class="fa fa-calendar"></i> AUG-2021
                                     </h4>
-                                    <li class="timeline-text">Freelancing in Web Development, AI, SaaS, and Chatbots. Skilled in front-end, back-end, machine learning, and creating
-                                    innovative software solutions for intelligent interfaces and scalable applications.</li>
+                                    <li class="timeline-text">Freelancing in Web Development, AI, SaaS, and Chatbots.
+                                        Skilled in front-end, back-end, machine learning, and creating
+                                        innovative software solutions for intelligent interfaces and scalable
+                                        applications.</li>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -190,10 +259,13 @@
                 <div class="project">
                     <i class="fa fa-code"></i>
                     <h4>Ecommerce Website</h4>
-                    <p>This project featured a user-friendly interface and a robust backend for managing products and user data. Key
-                        achievements include implementing advanced security measures, optimizing site performance, and ensuring a
+                    <p>This project featured a user-friendly interface and a robust backend for managing products and
+                        user data. Key
+                        achievements include implementing advanced security measures, optimizing site performance, and
+                        ensuring a
                         seamless
-                        shopping experience. This work not only demonstrates my technical proficiency but also my ability to deliver
+                        shopping experience. This work not only demonstrates my technical proficiency but also my
+                        ability to deliver
                         comprehensive digital commerce solutions.</p>
                     <a href="https://github.com/talib-raath/ecommerce-Website" class="btn btn-primary">View
                         Project</a>
@@ -211,14 +283,15 @@
                     <i class="fa fa-code"></i>
                     <h4>SnakeGame Using Assembly</h4>
                     <p>This is a simple implementation of the classic Snake game using Assembly Language 0x8088.</p>
-                    <a href="https://github.com/talib-raath/Snake-Game-in-Assembly-Language-0x8088" class="btn btn-primary">View Project</a>
+                    <a href="https://github.com/talib-raath/Snake-Game-in-Assembly-Language-0x8088"
+                        class="btn btn-primary">View Project</a>
                 </div>
 
                 <div class="project">
                     <i class="fa fa-code"></i>
                     <h4>Huffman Text Edititor</h4>
                     <p>This is a simple implementation of a feature-rich Notepad console based application with word
-                    suggestions and encoding/decoding functionality..</p>
+                        suggestions and encoding/decoding functionality..</p>
                     <a href="https://github.com/talib-raath/Huffman-Text-Edititor" class="btn btn-primary">View
                         Project</a>
                 </div>
@@ -226,7 +299,7 @@
                     <i class="fa fa-code"></i>
                     <h4>Contact Book</h4>
                     <p>This is a simple implementation a console based Contact Book using OOP concepts, organizing
-                    and managing contacts efficiently.</p>
+                        and managing contacts efficiently.</p>
                     <a href="https://github.com/talib-raath/Contact-Book" class="btn btn-primary">View
                         Project</a>
                 </div>
@@ -235,30 +308,32 @@
                     <i class="fa fa-code"></i>
                     <h4>Meal Planner</h4>
                     <p>This is a simple implementation a web application to generate meal using opeani api, organizing
-                    and managing meals efficiently.</p>
+                        and managing meals efficiently.</p>
                     <a href="https://github.com/talib-raath/Meal-Planner" class="btn btn-primary">View
                         Project</a>
                 </div>
-                
-              
-                
-                
+
+
+
+
                 <div class="project">
                     <i class="fa fa-code"></i>
                     <h4>Battleship Game</h4>
-                    <p>The Battleship game is a console based strategic two-player board game where each player deploys a fleet of ships on a
-                    grid and takes turns trying to locate and sink the opponent's fleet. This project provides a console-based version of
-                    the game, offering an interactive and engaging experience.</p>
+                    <p>The Battleship game is a console based strategic two-player board game where each player deploys
+                        a fleet of ships on a
+                        grid and takes turns trying to locate and sink the opponent's fleet. This project provides a
+                        console-based version of
+                        the game, offering an interactive and engaging experience.</p>
                     <a href="https://github.com/talib-raath/Battle-Ship-Game-PF-project" class="btn btn-primary">View
                         Project</a>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
 
-        <!-------------------------- Contact Me -------------------------->
+    <!-------------------------- Contact Me -------------------------->
 
     <section class="contact-content" id="contact">
         <div class="container">
@@ -269,7 +344,7 @@
             <div class="contact">
                 <form name="submitToGoogleSheet">
                     <input type="text" id="name" name="NAME" placeholder="Name" required>
-                    <input type="email" id = "email" name="EMAIL" placeholder="Email" required>
+                    <input type="email" id="email" name="EMAIL" placeholder="Email" required>
                     <input type="text" id="subject" name="SUBJECT" placeholder="Subject">
                     <textarea name="MESSAGE" id="message" placeholder="Message"></textarea>
                     <input type="submit" value="Send Message" class="submit">
@@ -278,18 +353,27 @@
             </div>
         </div>
     </section>
-        
+
+
+
+
+
+
+
     <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
-    
+
     <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
-    <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
-   </footer>
+    <footer class="footer">
+        <small class="message">Thanks for visiting and happy coding!</small>
+        <small class="copyright">&copy; Copyright 2023. All rights reserved @ talibraath
+            .</small>
+    </footer>
 
 </body>
+
 </html>
